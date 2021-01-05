@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="center">
+      <div class="header">
+        <div class="logo">
+          <img src="logo.svg" alt="logo" class="logo__media" />
+        </div>
+      </div>
+      <div class="video">
+        <p>Für Ernährungsbewusste</p>
+        <div class="container__video">
+          <video src="video.mp4" autoplay muted id="video"></video>
+          <button class="video__restart video__btn">
+            <img src="restart.svg" alt="play" class="restart__img" id="restart" />
+          </button>
+          <button class="video__sound video__btn" id="sound">
+            <img src="sound.svg" alt="play" class="sound__img"/>
+          </button>
+          <button class="video__screen video__btn">
+            <img src="fullscreen.svg" alt="play" class="screen__img" id="fullscreen" />
+          </button>
+        </div>
+      </div>
+      <div class="slider">
+        <div class="slider__content">
+          <div class="slider__track" id="slider__track">
+            <div class="slide">
+              <img src="slide1.png" alt="" class="slide__img" />
+            </div>
+            <div class="slide">
+              <img src="slide2.png" alt="" class="slide__img" />
+            </div>
+            <div class="slide">
+              <img src="slide3.png" alt="" class="slide__img" />
+            </div>
+            <div class="slide">
+              <img src="slide4.png" alt="" class="slide__img" />
+            </div>
+            <div class="slide">
+              <img src="slide5.png" alt="" class="slide__img" />
+            </div>
+          </div>
+        </div>
+        <button class="slider__pre slider__btn" id="slider__pre">
+            <img src="arrow-pre.svg" alt="" class="pre__media slider__media" />
+          </button>
+          <button class="slider__next slider__btn" id="slider__next">
+            <img src="arrow-next.svg" alt="" class="next__pre__media slider__media" />
+          </button>
+      </div>
+      <div class="footer">
+        <button class="btn">Zum Shop</button>
+      </div>
+    </div>
+    <script src="hammer.js" ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
