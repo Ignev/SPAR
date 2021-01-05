@@ -44,20 +44,28 @@ Hammer(track).on("swipeleft", (e) => {
     track.style.left = pos + "px";
   }
 });
-fullscreen.addEventListener('click', ()=>{
-    console.log(1);
-    console.log(video);
-   console.log(video.requestFullscreen());
+fullscreen.addEventListener("click", () => {
+  console.log(1);
+  console.log(video);
+  console.log(video.requestFullscreen());
+});
+sound.addEventListener("click", () => {
+  if (video.muted == true) {
+    video.muted = false;
+    sound.innerHTML = '<img src="mute.svg" alt="play" class="sound__img"/>';
+  } else {
+    video.muted = true;
+    sound.innerHTML = '<img src="sound.svg" alt="play" class="sound__img"/>';
+  }
+});
+video.onended = function(e) {
+  restart.style.display = "block";
+  sound.style.display = "none";
+  fullscreen.style.display = "none";
+};
+restart.addEventListener('click', ()=>{
+  video.play();
+  sound.style.display = "block";
+  fullscreen.style.display = "block";
+  restart.style.display = "none";
 })
-sound.addEventListener('click', ()=>{
-    if(video.muted == true){
-        video.muted = false;
-        sound.innerHTML = '<img src="mute.svg" alt="play" class="sound__img"/>'
-    }
-    else{
-        video.muted = true;
-        sound.innerHTML = '<img src="sound.svg" alt="play" class="sound__img"/>'
-    }   
-    
-})
-
