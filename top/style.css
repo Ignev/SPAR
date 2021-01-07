@@ -29,49 +29,44 @@ button{
   outline: none;
 }
 .top {
-  background: url(bg.jpg) center;
+  background: url(bg.png) center;
   display: flex;
   max-width: 100vw;
-  height: 160px;
+  height: 100vh;
   overflow: hidden;
   justify-content: space-between;
   overflow: hidden;
 }
-.btn {
-  width: 90%;
-  max-width: 177px;
-  height: 50px;
-  background: #CD0405;
-  border: 2px solid #ffffff;
-  color: #fff;
-  font-size: 100%;
-}
 .right,.left{
   width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 15px;
+}
+.left{
+  font-size: 3vw;
 }
 .right {
-  background: #cd0404ce;
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 17px;
+  background: 0;
 }
-.right::after {
-  content: "";
-  position: absolute;
-  right: 100%;
-  top: 0;
-  width: 0;
-  border-bottom: 160px solid #cd0404ce;
-  border-left: 9vw solid transparent;
+.btn{
+  width: 69%;
+  background: 0;
+  border: 0;
+}
+.btn__media{
+  width: 100%;
 }
 .left {
-  background: #ffffff7c;
-  padding: 17px;
+  background: 0;
   position: relative;
 }
 .logo__media{
-  width: 90%;
+  width: 80%;
   max-width: 234px;
 }
