@@ -1,12 +1,18 @@
 @font-face {
   font-family: "Avenir";
-  src: url("../fonts/AvenirNextLTW02Demi.ttf") format("ttf");
+  src: url("Avenir-Next-LT-W02-Demi.woff2") format("woff2"),
+    url("Avenir-Next-LT-W02-Demi.woff") format("woff"),
+    url("Avenir-Next-LT-W02-Demi.ttf") format("ttf"),
+    url("Avenir-Next-LT-W02-Demi.otf") format("otf");
   font-weight: bold;
   font-style: normal;
 }
 @font-face {
   font-family: "Avenir";
-  src: url("../fonts/AvenirNextLTW02Regular.ttf") format("ttf");
+  src: url("Avenir-Next-LT-W02-Regular.woff2") format("woff2"),
+  url("Avenir-Next-LT-W02-Regular.woff") format("woff"),
+  url("Avenir-Next-LT-W02-Regular.ttf") format("ttf"),
+  url("Avenir-Next-LT-W02-Regular.otf") format("otf");
   font-weight: normal;
   font-style: normal;
 }
@@ -49,7 +55,7 @@ button {
   width: 100vw;
 }
 .logo__media {
-  width: 50%;
+  width: 30%;
   max-width: 234px;
 }
 .video {
@@ -65,25 +71,25 @@ button {
 }
 .video > p {
   text-align: center;
-  font-size: 5vw;
+  font-size: 6vw;
   margin: 20px;
 }
 .video::after {
   content: "";
   position: absolute;
-  bottom: -50px;
+  bottom: -30px;
   right: 0;
   width: 0;
-  border-top: 50px solid #cd0405;
+  border-top: 30px solid #cd0405;
   border-left: 50vw solid transparent;
 }
 .video::before {
   content: "";
   position: absolute;
-  bottom: -50px;
+  bottom: -30px;
   left: 0;
   width: 0;
-  border-top: 50px solid #cd0405;
+  border-top: 30px solid #cd0405;
   border-right: 50vw solid transparent;
 }
 video {
@@ -91,7 +97,7 @@ video {
 }
 .container__video {
   position: relative;
-  width: 80%;
+  width: 95%;
 }
 .video__btn {
   background: 0;
@@ -156,12 +162,17 @@ video {
   position: absolute;
   height: 50px;
   top: 40%;
+  width: 13px;
+  height: 21px;
+}
+.slider__media {
+  width: 100%;
 }
 .slider__pre {
-  left: 25%;
+  left: 10%;
 }
 .slider__next {
-  right: 25%;
+  right: 10%;
 }
 .footer {
   width: 100vw;
@@ -171,12 +182,12 @@ video {
   align-items: center;
   padding: 10px;
 }
-.btn{
+.btn {
   width: 40%;
   background: 0;
   border: 0;
   height: 37px;
 }
-.btn__media{
+.btn__media {
   width: 100%;
 }

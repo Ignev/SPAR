@@ -24,7 +24,7 @@ pre.addEventListener("click", () => {
     track.style.left = pos + "px";
   }
 });
-Hammer(track).on("swiperight", (e) => {
+Hammer(slider).on("swiperight", (e) => {
   if (pos >= 0) {
   } else {
     pos += 116;
@@ -34,7 +34,7 @@ Hammer(track).on("swiperight", (e) => {
     track.style.left = pos + "px";
   }
 });
-Hammer(track).on("swipeleft", (e) => {
+Hammer(slider).on("swipeleft", (e) => {
   if (pos <= -464) {
   } else {
     pos -= 116;
