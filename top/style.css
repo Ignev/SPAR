@@ -32,7 +32,7 @@ button{
   outline: none;
 }
 .top {
-  background: url(bg.png) center;
+  background: url(bg.jpg) center;
   display: flex;
   max-width: 100vw;
   height: 100vh;
