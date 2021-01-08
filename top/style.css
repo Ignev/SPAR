@@ -33,6 +33,7 @@ button{
 }
 .top {
   background: url(bg.jpg) center;
+  background-size: 100% 100%;
   display: flex;
   max-width: 100vw;
   height: 100vh;
@@ -45,7 +46,7 @@ button{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-left: 15px;
+  padding-left: 25px;
 }
 .left{
   font-size: 3vw;

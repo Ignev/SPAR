@@ -68,10 +68,11 @@ button {
   padding: 0 5px;
   position: relative;
   margin-bottom: 30px;
+  padding-bottom: 9vw;
 }
 .video > p {
   text-align: center;
-  font-size: 6vw;
+  font-size: 7vw;
   margin: 20px;
 }
 .video::after {
@@ -97,7 +98,7 @@ video {
 }
 .container__video {
   position: relative;
-  width: 95%;
+  width: 83%;
 }
 .video__btn {
   background: 0;
@@ -147,7 +148,7 @@ video {
   position: relative;
 }
 .slider__content {
-  max-width: 116px;
+  max-width: 174px;
   justify-content: start;
   display: flex;
   overflow: hidden;
@@ -157,6 +158,10 @@ video {
   flex-direction: row;
   position: relative;
   transition: 0.5s ease;
+}
+.slide{
+  margin-right: 29px;
+  margin-left: 29px;
 }
 .slider__btn {
   position: absolute;
@@ -181,6 +186,7 @@ video {
   justify-content: center;
   align-items: center;
   padding: 10px;
+  padding-bottom: 15px;
 }
 .btn {
   width: 40%;

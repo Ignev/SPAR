@@ -5,11 +5,11 @@ let pos = track.style.left.split("p")[0];
 track.style.left = 0;
 
 next.addEventListener("click", () => {
-  if (pos <= -464) {
+  if (pos <= -696) {
   } else {
-    pos -= 116;
+    pos -= 174;
   }
-  if (pos < -464) {
+  if (pos < -696) {
   } else {
     track.style.left = pos + "px";
   }
@@ -17,7 +17,7 @@ next.addEventListener("click", () => {
 pre.addEventListener("click", () => {
   if (pos >= 0) {
   } else {
-    pos += 116;
+    pos += 174;
   }
   if (pos > 0) {
   } else {
@@ -27,7 +27,7 @@ pre.addEventListener("click", () => {
 Hammer(slider).on("swiperight", (e) => {
   if (pos >= 0) {
   } else {
-    pos += 116;
+    pos += 174;
   }
   if (pos > 0) {
   } else {
@@ -35,11 +35,11 @@ Hammer(slider).on("swiperight", (e) => {
   }
 });
 Hammer(slider).on("swipeleft", (e) => {
-  if (pos <= -464) {
+  if (pos <= -696) {
   } else {
-    pos -= 116;
+    pos -= 174;
   }
-  if (pos < -464) {
+  if (pos < -696) {
   } else {
     track.style.left = pos + "px";
   }
