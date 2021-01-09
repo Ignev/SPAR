@@ -49,7 +49,9 @@ button{
   padding-left: 15px;
 }
 .left{
-  font-size: 2.5vw;
+  font-size: 2.2vw;
+  padding-left: 25px;
+  margin-top: 3px;
 }
 .right {
   position: relative;
@@ -70,7 +72,11 @@ button{
   background: 0;
   position: relative;
 }
-.logo__media{
+.logo{
+  margin-bottom: 3px;
   width: 60%;
+}
+.logo__media{
+  width: 95%;
   max-width: 234px;
 }

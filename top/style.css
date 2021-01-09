@@ -70,7 +70,11 @@ button{
   background: 0;
   position: relative;
 }
+.logo{
+  margin-bottom: 10px;
+  width: 75%;
+}
 .logo__media{
-  width: 80%;
+  width: 100%;
   max-width: 234px;
 }
