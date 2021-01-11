@@ -16,26 +16,29 @@ window.addEventListener("DOMContentLoaded", (e) => {
 
   next.addEventListener("click", () => {
     if (pos <= -slideWidth * 4) {
+      pos = 0
     } else {
       pos -= slideWidth;
     }
-    if (pos < -slideWidth * 4) {
-      pos = 0;
-      track.style.left = pos + "px";
-    } else {
-      track.style.left = pos + "px";
-    }
+    track.style.left = pos + "px";
+    console.log(track.style.left);
   });
   pre.addEventListener("click", () => {
     if (pos >= 0) {
+      pos = -slideWidth * 4
     } else {
       pos += slideWidth;
     }
-    if (pos > 0) {
-    } else {
       track.style.left = pos + "px";
-    }
   });
+  setInterval(()=>{
+    if (pos <= -slideWidth * 4) {
+      pos = 0
+    } else {
+      pos -= slideWidth;
+    }
+    track.style.left = pos + "px";
+  }, 5500)
   Hammer(slider).on("swiperight", (e) => {
     if (pos >= 0) {
     } else {

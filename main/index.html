@@ -12,27 +12,30 @@
         <div class="logo">
           <img src="logo.png" alt="logo" class="logo__media" />
         </div>
-        <p>Darf's ein bisschen <br> mehr sein?</p>
+        <p>
+          Darf's ein bisschen <br />
+          mehr sein?
+        </p>
         <div class="container__video">
           <video src="video.mp4" autoplay muted id="video"></video>
-          <button class="video__restart video__btn"  id="restart">
-            <img src="restart.svg" alt="play" class="restart__img"/>
+          <button class="video__restart video__btn" id="restart">
+            <img src="restart.svg" alt="play" class="restart__img" />
           </button>
           <button class="video__sound video__btn" id="sound">
-            <img src="sound.svg" alt="play" class="sound__img"/>
+            <img src="sound.svg" alt="play" class="sound__img" />
           </button>
           <button class="video__sound video__btn" id="mute">
-            <img src="mute.svg" alt="play" class="sound__img"/>
+            <img src="mute.svg" alt="play" class="sound__img" />
           </button>
           <button class="video__screen video__btn" id="fullscreen">
-            <img src="fullscreen.svg" alt="play" class="screen__img"/>
+            <img src="fullscreen.svg" alt="play" class="screen__img" />
           </button>
         </div>
       </div>
-      <div class="slider">
+      <div class="slider" id="slider__t">
         <div class="slider__content" id="slider">
           <div class="slider__track" id="slider__track">
-            <div class="slide" >
+            <div class="slide">
               <img src="slide1.jpg" alt="" class="slide__img" />
             </div>
             <div class="slide">
@@ -50,19 +53,103 @@
           </div>
         </div>
         <button class="slider__pre slider__btn" id="slider__pre">
-            <img src="arrow-pre.svg" alt="" class="pre__media slider__media" />
-          </button>
-          <button class="slider__next slider__btn" id="slider__next">
-            <img src="arrow-next.svg" alt="" class="next__pre__media slider__media" />
-          </button>
+          <img src="arrow-pre.svg" alt="" class="pre__media slider__media" />
+        </button>
+        <button class="slider__next slider__btn" id="slider__next">
+          <img src="arrow-next.svg" alt="" class="next__media slider__media" />
+        </button>
       </div>
       <div class="footer">
         <button class="btn">
-          <img src="btn.jpg" alt="button" class="btn__media">
+          <img src="btn.jpg" alt="button" class="btn__media" />
         </button>
       </div>
     </div>
-    <script src="hammer.js" ></script>
+    <script src="hammer.js"></script>
     <script src="script.js"></script>
+    <script>
+      var isInterstitial = true;
+      var avgVStart = 0.01;
+      var avgVEnd = 0.0;
+      var x_click = document.getElementsByTagName("body")[0];
+      x_click.addEventListener("click", (e) => {
+        if (
+          e.target != video &&
+          e.target != slider__t &&
+          e.target != mute &&
+          e.target != sound &&
+          e.target != fullscreen &&
+          e.target != document.querySelector('.next__media') &&
+          e.target != e.target != document.querySelector('.pre__media')) {
+          clickout_1();
+        }
+      });
+      var clickTag1 = "";
+      function clickout_1() {
+        fireASCClicks();
+        var e = clickTag1;
+        if (dspx_debug == 1) {
+          console.log(e);
+        }
+        window.open(e);
+      }
+      var dspx_debug = readGETParameter("dspx_debug");
+      function readGETParameter(c) {
+        var o = window.location.search.substring(1);
+        var n = o.split("&");
+        for (var e = 0; e < n.length; e++) {
+          var i = n[e].split("=");
+          if (i[0] == c) {
+            return decodeURIComponent(i[1]);
+          }
+        }
+        return c == "encodelevel" ? 2 : 0;
+      }
+      function fireASCClicks() {
+        var _c = "dspx_clicktagASC",
+          _nn = 5;
+        var cASC = function (c, nn) {
+          var n = window.location.search.substring(1),
+            i = n.split("&");
+          var aa = [];
+          for (var e = 0; e < i.length; e++) {
+            var o = i[e].split("=");
+            for (var ni = 0; ni < nn; ni++) {
+              if (ni == 0) cc = c;
+              else cc = c + ni;
+              if (o[0] == cc) {
+                aa.push(decodeURIComponent(o[1]));
+              }
+            }
+          }
+          return aa;
+        };
+        var ctASC = cASC(_c, _nn);
+        for (i = 0; i < ctASC.length; i++) {
+          if (dspx_debug == 1) console.log("fire Click ASC:" + ctASC[i]);
+          new Image().src = ctASC[i];
+        }
+      }
+      var lastSentProgress = -1;
+      function trackProgressInternal(progress) {
+        for (var i = lastSentProgress + 1; i <= progress; i++) {
+          track_vtr(i);
+          lastSentProgress = i;
+        }
+      }
+      function track_vtr(progress) {
+        if (progress == 0) {
+          console.log(progress);
+        } else if (progress == 25) {
+          console.log(progress);
+        } else if (progress == 50) {
+          console.log(progress);
+        } else if (progress == 75) {
+          console.log(progress);
+        } else if (progress == 100) {
+          console.log(progress);
+        }
+      }
+    </script>
   </body>
 </html>
