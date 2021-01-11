@@ -55,7 +55,6 @@ window.addEventListener("DOMContentLoaded", (e) => {
     }
   });
   fullscreen.addEventListener("click", () => {
-    console.log(1);
     console.log(video);
     console.log(video.requestFullscreen());
   });
