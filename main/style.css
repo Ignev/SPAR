@@ -164,8 +164,10 @@ video {
   transition: 0.5s ease;
 }
 .slide{
-  margin-right: 29px;
-  margin-left: 29px;
+  overflow: hidden;
+}
+.slide__img{
+  max-width: 180px;
 }
 .slider__btn {
   position: absolute;
