@@ -57,6 +57,7 @@ button {
 .logo__media {
   width: 35%;
   max-width: 234px;
+  margin-left: 6%;
 }
 .video {
   background: #cd0405;
