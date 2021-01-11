@@ -20,6 +20,8 @@ window.addEventListener("DOMContentLoaded", (e) => {
       pos -= slideWidth;
     }
     if (pos < -slideWidth * 4) {
+      pos = 0;
+      track.style.left = pos + "px";
     } else {
       track.style.left = pos + "px";
     }
