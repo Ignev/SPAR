@@ -25,7 +25,7 @@
             <img src="sound.svg" alt="play" class="sound__img" />
           </button>
           <button class="video__sound video__btn" id="mute">
-            <img src="mute.svg" alt="play" class="sound__img" />
+            <img src="mute.svg" alt="play" class="mute__img" />
           </button>
           <button class="video__screen video__btn" id="fullscreen">
             <img src="fullscreen.svg" alt="play" class="screen__img" />
@@ -79,8 +79,13 @@
           e.target != mute &&
           e.target != sound &&
           e.target != fullscreen &&
-          e.target != document.querySelector('.next__media') &&
-          e.target != e.target != document.querySelector('.pre__media')) {
+          e.target != document.querySelector(".next__media") &&
+          e.target != document.querySelector(".pre__media") &&
+          e.target != document.querySelector(".restart__img") &&
+          e.target != document.querySelector(".sound__img") &&
+          e.target != document.querySelector(".screen__img") &&
+          e.target != document.querySelector(".mute__img") 
+        ) {
           clickout_1();
         }
       });
