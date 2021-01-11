@@ -62,10 +62,23 @@ window.addEventListener("DOMContentLoaded", (e) => {
   sound.addEventListener("click", () => {
     if (video.muted == true) {
       video.muted = false;
-      sound.innerHTML = '<img src="mute.svg" alt="play" class="sound__img"/>';
+      mute.style.display = "block";
+      sound.style.display = "none";
     } else {
       video.muted = true;
-      sound.innerHTML = '<img src="sound.svg" alt="play" class="sound__img"/>';
+      sound.style.display = "block";
+      mute.style.display = "none";
+    }
+  });
+  mute.addEventListener("click", () => {
+    if (video.muted == true) {
+      video.muted = false;
+      mute.style.display = "block";
+      sound.style.display = "none";
+    } else {
+      video.muted = true;
+      sound.style.display = "block";
+      mute.style.display = "none";
     }
   });
   video.onended = function (e) {

@@ -130,6 +130,9 @@ video {
 .sound__img {
   width: 100%;
 }
+#mute{
+  display: none;
+}
 .video__screen {
   right: 5px;
   bottom: 5px;
