@@ -152,7 +152,7 @@ video {
   position: relative;
 }
 .slider__content {
-  max-width: 200px;
+  max-width: 230px;
   justify-content: start;
   display: flex;
   overflow: hidden;
@@ -169,7 +169,7 @@ video {
   justify-content: center;
 }
 .slide__img{
-  max-width: 200px;
+  max-width: 230px;
 }
 .slider__btn {
   position: absolute;
