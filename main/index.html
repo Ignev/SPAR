@@ -32,32 +32,22 @@
           </button>
         </div>
       </div>
-      <div class="slider" id="slider__t">
-        <div class="slider__content" id="slider">
-          <div class="slider__track" id="slider__track">
-            <div class="slide">
-              <img src="slide1.jpg" alt="" class="slide__img" />
-            </div>
-            <div class="slide">
-              <img src="slide2.jpg" alt="" class="slide__img" />
-            </div>
-            <div class="slide">
-              <img src="slide3.jpg" alt="" class="slide__img" />
-            </div>
-            <div class="slide">
-              <img src="slide4.jpg" alt="" class="slide__img" />
-            </div>
-            <div class="slide">
-              <img src="slide5.jpg" alt="" class="slide__img" />
-            </div>
-          </div>
+      <div class="slider">
+        <div class="slider__item">
+          <img src="slide1.jpg" alt="" class="slider__media">
         </div>
-        <button class="slider__pre slider__btn" id="slider__pre">
-          <img src="arrow-pre.svg" alt="" class="pre__media slider__media" />
-        </button>
-        <button class="slider__next slider__btn" id="slider__next">
-          <img src="arrow-next.svg" alt="" class="next__media slider__media" />
-        </button>
+        <div class="slider__item">
+          <img src="slide2.jpg" alt="" class="slider__media">
+        </div>
+        <div class="slider__item">
+          <img src="slide3.jpg" alt="" class="slider__media">
+        </div>
+        <div class="slider__item">
+          <img src="slide4.jpg" alt="" class="slider__media">
+        </div>
+        <div class="slider__item">
+          <img src="slide5.jpg" alt="" class="slider__media">
+        </div>
       </div>
       <div class="footer">
         <button class="btn">
@@ -65,9 +55,10 @@
         </button>
       </div>
     </div>
-    <script src="hammer.js"></script>
+    <script src="jquery.js"></script>
+    <script src="slick.js"></script>
     <script src="script.js"></script>
-    <script>
+    <!-- <script>
       var isInterstitial = true;
       var avgVStart = 0.01;
       var avgVEnd = 0.0;
@@ -75,7 +66,7 @@
       x_click.addEventListener("click", (e) => {
         if (
           e.target != video &&
-          e.target != slider__t &&
+          e.target != document.querySelector(".slider") &&
           e.target != mute &&
           e.target != sound &&
           e.target != fullscreen &&
@@ -84,7 +75,7 @@
           e.target != document.querySelector(".restart__img") &&
           e.target != document.querySelector(".sound__img") &&
           e.target != document.querySelector(".screen__img") &&
-          e.target != document.querySelector(".mute__img") 
+          e.target != document.querySelector(".mute__img")
         ) {
           clickout_1();
         }
@@ -155,6 +146,6 @@
           console.log(progress);
         }
       }
-    </script>
+    </script> -->
   </body>
 </html>

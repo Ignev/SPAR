@@ -47,6 +47,9 @@ button {
   flex-direction: column;
   justify-content: space-between;
 }
+
+/* Logo */
+
 .logo {
   padding: 10px;
   display: flex;
@@ -59,6 +62,9 @@ button {
   max-width: 234px;
   margin-left: 6%;
 }
+
+/* Video */
+
 .video {
   background: #cd0405;
   display: flex;
@@ -140,53 +146,47 @@ video {
   width: 10%;
   max-width: 24px;
 }
-.slider__btn {
-  background: 0;
-  border: 0;
-}
-.slider {
-  justify-content: start;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  position: relative;
-}
-.slider__content {
-  max-width: 270px;
-  justify-content: start;
-  display: flex;
-  overflow: hidden;
-}
-.slider__track {
-  display: flex;
-  flex-direction: row;
-  position: relative;
-  transition: 0.5s ease;
-}
-.slide{
-  overflow: hidden;
+/* Slider */
+
+.slider{
+  max-height: 250px;
+  min-width: 0;
   display: flex;
   justify-content: center;
+  position: relative;
 }
-.slide__img{
+.slick-arrow{
+  position: absolute;
+  top: 50%;
+  width: 25px;
+  height: 35px;
+  border: 0;
+  font-size: 0;
+}
+.slick-prev{
+  background: url(arrow-pre.svg) 0 0 / 80% no-repeat;
+  left: 5%;
+}
+.slick-next{
+  background: url(arrow-next.svg) 0 0 / 80%  no-repeat;
+  right: 5%;
+}
+.slick-track{
+  display: flex;
+  max-height: 270px;
+}
+.slick-list{
+  overflow: hidden;
   max-width: 270px;
 }
-.slider__btn {
-  position: absolute;
-  height: 50px;
-  top: 40%;
-  width: 13px;
-  height: 21px;
+.slider__media, .slider__item, .slick-slide{
+  max-width: 270px;
+  margin: 0;
+  padding: 0;
 }
-.slider__media {
-  width: 100%;
-}
-.slider__pre {
-  left: 10%;
-}
-.slider__next {
-  right: 10%;
-}
+
+
+/* Footer */
 .footer {
   width: 100vw;
   background: #cd0405;
