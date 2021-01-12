@@ -162,6 +162,7 @@ video {
   height: 35px;
   border: 0;
   font-size: 0;
+  margin-bottom: -30px;
 }
 .slick-prev{
   background: url(arrow-pre.svg) 0 0 / 80% no-repeat;
