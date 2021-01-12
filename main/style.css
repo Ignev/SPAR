@@ -175,14 +175,16 @@ video {
 }
 .slick-track{
   display: flex;
-  max-height: 220px;
+  max-height: 200px;
+  justify-content: center;
+  align-items: center;
 }
 .slick-list{
   overflow: hidden;
-  max-width: 220px;
+  max-width: 200px;
 }
 .slider__media, .slider__item, .slick-slide{
-  max-width: 220px;
+  max-width: 200px;
   margin: 0;
   padding: 0;
 }
