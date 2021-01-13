@@ -149,12 +149,10 @@ video {
 /* Slider */
 
 .slider{
-  height: 100vw;
-  min-width: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
+}
+.slider__item{
+max-width: 50%;
+display: flex;
 }
 .slider__media{
   max-width: 100%;
