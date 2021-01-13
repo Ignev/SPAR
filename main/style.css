@@ -216,9 +216,19 @@ video {
 .btn__media {
   width: 100%;
 }
-/* @media screen and (max-width: 768px){
+@media screen and (max-width: 768px){
   .slider__item {
     height: 34.5vh;
+  }
+}
+@media screen and (max-width: 414px){
+  .slider__item {
+    height: 32vh;
+  }
+}
+@media screen and (max-width: 411px){
+  .slider__item {
+    height: 31vh;
   }
 }
 
@@ -271,4 +281,4 @@ video {
   .slider__item {
     height: 28.5vh;
   }
-} */
+}
