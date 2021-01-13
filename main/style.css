@@ -149,18 +149,12 @@ video {
 /* Slider */
 
 .slider{
-  max-height: 200px;
+  height: 100vw;
   min-width: 0;
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
-}
-.slider__item{
-  max-width: 200px;
-  margin-left: 22%;
-}.slick-list{
-  overflow: hidden;
 }
 .slider__media{
   max-width: 100%;
