@@ -190,12 +190,7 @@ video {
 }
 .slider__media{
   max-width: 100%;
-  margin-left: 50%;
-}
-.slider__item, .slick-slide{
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
+  
 }
 
 
