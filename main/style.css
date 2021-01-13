@@ -213,6 +213,7 @@ video {
   background: 0;
   border: 0;
   height: 15px;
+  margin-bottom: 20px;
 }
 .btn__media {
   width: 100%;

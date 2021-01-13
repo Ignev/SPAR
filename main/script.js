@@ -13,7 +13,8 @@ window.addEventListener("DOMContentLoaded", (e) => {
 		speed: 500,
 		pauseOnHover: true,
 		autoplaySpeed: 3000,
-		arrows: true,
+    arrows: true,
+    autoplay: true, 
   });
 
   fullscreen.addEventListener("click", () => {
