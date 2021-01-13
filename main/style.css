@@ -158,8 +158,7 @@ video {
 }
 .slider__item{
   max-width: 200px;
-  display: flex;
-  margin-left: 22%;
+  margin-left: 21%;
 }.slick-list{
   overflow: hidden;
 }
