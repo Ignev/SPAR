@@ -151,8 +151,38 @@ video {
 .slider{
 }
 .slider__item{
-max-width: 50%;
 display: flex;
+}
+.slider__item-1{
+  background: url(slide1.jpg) 50% 50% / 70% no-repeat;
+  height: 190px;
+  width: 190px;
+}
+.slider__item-2{
+  background: url(slide2.jpg) 50% 50% / 70% no-repeat;
+  height: 190px;
+  width: 190px;
+}
+.slider__item-3{
+  background: url(slide3.jpg) 50% 50% / 70% no-repeat;
+  height: 190px;
+  width: 190px;
+}
+.slider__item-4{
+  background: url(slide4.jpg) 50% 50% / 70% no-repeat;
+  height: 190px;
+  width: 190px;
+}
+.slider__item-5{
+  background: url(slide5.jpg) 50% 50% / 70% no-repeat;
+  height: 190px;
+  width: 190px;
+}
+.slick-slide{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 50%;
 }
 .slider__media{
   max-width: 100%;
