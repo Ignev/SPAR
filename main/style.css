@@ -233,7 +233,7 @@ video {
 }
 @media screen and (max-width: 360px){
   .slider__item {
-    height: 30.5vh;
+    height: 31vh;
   }
   .slider__item-1 {
     background: url(slide1.jpg) 50% 50% / 70% no-repeat;
