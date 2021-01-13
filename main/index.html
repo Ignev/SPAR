@@ -58,7 +58,7 @@
     <script src="jquery.js"></script>
     <script src="slick.js"></script>
     <script src="script.js"></script>
-    <!-- <script>
+    <script>
       var isInterstitial = true;
       var avgVStart = 0.01;
       var avgVEnd = 0.0;
@@ -70,8 +70,8 @@
           e.target != mute &&
           e.target != sound &&
           e.target != fullscreen &&
-          e.target != document.querySelector(".next__media") &&
-          e.target != document.querySelector(".pre__media") &&
+          e.target != document.querySelector(".slick-prev") &&
+          e.target != document.querySelector(".slick-next") &&
           e.target != document.querySelector(".restart__img") &&
           e.target != document.querySelector(".sound__img") &&
           e.target != document.querySelector(".screen__img") &&
@@ -146,6 +146,6 @@
           console.log(progress);
         }
       }
-    </script> -->
+    </script>
   </body>
 </html>
