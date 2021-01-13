@@ -10,9 +10,9 @@
 @font-face {
   font-family: "Avenir";
   src: url("Avenir-Next-LT-W02-Regular.woff2") format("woff2"),
-  url("Avenir-Next-LT-W02-Regular.woff") format("woff"),
-  url("Avenir-Next-LT-W02-Regular.ttf") format("ttf"),
-  url("Avenir-Next-LT-W02-Regular.otf") format("otf");
+    url("Avenir-Next-LT-W02-Regular.woff") format("woff"),
+    url("Avenir-Next-LT-W02-Regular.ttf") format("ttf"),
+    url("Avenir-Next-LT-W02-Regular.otf") format("otf");
   font-weight: normal;
   font-style: normal;
 }
@@ -137,7 +137,7 @@ video {
 .sound__img {
   width: 100%;
 }
-#mute{
+#mute {
   display: none;
 }
 .video__screen {
@@ -148,46 +148,39 @@ video {
 }
 /* Slider */
 
-.slider{
+.slider {
 }
-.slider__item{
-display: flex;
+.slider__item {
+  display: flex;
+  height: 140px;
+  width: 140px;
 }
-.slider__item-1{
-  background: url(slide1.jpg) 50% 50% / 70% no-repeat;
-  height: 190px;
-  width: 190px;
+.slider__item-1 {
+  background: url(slide1.jpg) 50% 50% / 60% no-repeat;
 }
-.slider__item-2{
-  background: url(slide2.jpg) 50% 50% / 70% no-repeat;
-  height: 190px;
-  width: 190px;
+.slider__item-2 {
+  background: url(slide2.jpg) 50% 50% / 60% no-repeat;
 }
-.slider__item-3{
-  background: url(slide3.jpg) 50% 50% / 70% no-repeat;
-  height: 190px;
-  width: 190px;
+.slider__item-3 {
+  background: url(slide3.jpg) 50% 50% / 60% no-repeat;
 }
-.slider__item-4{
-  background: url(slide4.jpg) 50% 50% / 70% no-repeat;
-  height: 190px;
-  width: 190px;
+.slider__item-4 {
+  background: url(slide4.jpg) 50% 50% / 60% no-repeat;
 }
-.slider__item-5{
-  background: url(slide5.jpg) 50% 50% / 70% no-repeat;
-  height: 190px;
-  width: 190px;
+.slider__item-5 {
+  background: url(slide5.jpg) 50% 50% / 60% no-repeat;
+
 }
-.slick-slide{
+.slick-slide {
   display: flex;
   justify-content: center;
   align-items: center;
   max-width: 50%;
 }
-.slider__media{
+.slider__media {
   max-width: 100%;
 }
-.slick-arrow{
+.slick-arrow {
   position: absolute;
   top: 40%;
   width: 25px;
@@ -196,16 +189,14 @@ display: flex;
   font-size: 0;
   z-index: 100;
 }
-.slick-prev{
-  background: url(arrow-pre.svg) 0 0 / 80%  no-repeat;
+.slick-prev {
+  background: url(arrow-pre.svg) 0 0 / 80% no-repeat;
   left: 5%;
 }
-.slick-next{
-  background: url(arrow-next.svg) 0 0 / 80%  no-repeat;
+.slick-next {
+  background: url(arrow-next.svg) 0 0 / 80% no-repeat;
   right: 5%;
 }
-
-
 
 /* Footer */
 .footer {
