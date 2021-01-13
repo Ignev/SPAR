@@ -148,27 +148,25 @@ video {
 }
 /* Slider */
 
-.slider {
-}
 .slider__item {
   display: flex;
-  height: 120px;
+  height: 90px;
   width: 120px;
 }
 .slider__item-1 {
-  background: url(slide1.jpg) 50% 50% / 50% no-repeat;
+  background: url(slide1.jpg) 50% 50% / 40% no-repeat;
 }
 .slider__item-2 {
-  background: url(slide2.jpg) 50% 50% / 50% no-repeat;
+  background: url(slide2.jpg) 50% 50% / 40% no-repeat;
 }
 .slider__item-3 {
-  background: url(slide3.jpg) 50% 50% / 50% no-repeat;
+  background: url(slide3.jpg) 50% 50% / 40% no-repeat;
 }
 .slider__item-4 {
-  background: url(slide4.jpg) 50% 50% / 50% no-repeat;
+  background: url(slide4.jpg) 50% 50% / 40% no-repeat;
 }
 .slider__item-5 {
-  background: url(slide5.jpg) 50% 50% / 50% no-repeat;
+  background: url(slide5.jpg) 50% 50% / 40% no-repeat;
 
 }
 .slick-slide {
