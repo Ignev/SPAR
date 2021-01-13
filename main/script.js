@@ -3,7 +3,7 @@ window.addEventListener("DOMContentLoaded", (e) => {
 
   $('.slider').slick({
     variableWidth: true,
-    autoplay: true,
+    // autoplay: true,
   });
 
   fullscreen.addEventListener("click", () => {

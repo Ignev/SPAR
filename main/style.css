@@ -183,10 +183,13 @@ video {
   overflow: hidden;
   max-width: 200px;
 }
-.slider__media, .slider__item, .slick-slide{
+.slider__item, .slick-slide{
   max-width: 200px;
   margin: 0;
   padding: 0;
+}
+.slider__media{
+  max-width: 100%;
 }
 .slider__item, .slick-slide{
   /* display: flex;
