@@ -149,12 +149,20 @@ video {
 /* Slider */
 
 .slider{
-  max-height: 250px;
+  max-height: 200px;
   min-width: 0;
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
+}
+.slider__item{
+  max-width: 200px;
+  display: flex;
+  margin-left: 23%;
+}
+.slider__media{
+  max-width: 100%;
 }
 .slick-arrow{
   position: absolute;
@@ -173,25 +181,7 @@ video {
   background: url(arrow-next.svg) 0 0 / 80%  no-repeat;
   right: 5%;
 }
-.slick-track{
-  display: flex;
-  max-height: 200px;
-  justify-content: center;
-  align-items: center;
-}
-.slick-list{
-  overflow: hidden;
-  max-width: 200px;
-}
-.slider__item, .slick-slide{
-  max-width: 200px;
-  margin: 0;
-  padding: 0;
-}
-.slider__media{
-  max-width: 100%;
-  
-}
+
 
 
 /* Footer */
