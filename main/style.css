@@ -128,7 +128,7 @@ video {
 }
 .video__sound {
   left: 5px;
-  bottom: 14%;
+  bottom: 5%;
   width: 10%;
   max-width: 24px;
 }
@@ -140,7 +140,7 @@ video {
 }
 .video__screen {
   right: 5px;
-  bottom: 14%;
+  bottom: 5%;
   width: 10%;
   max-width: 24px;
 }
