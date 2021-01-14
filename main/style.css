@@ -71,7 +71,8 @@ button {
   padding: 0 5px;
   position: relative;
   margin-bottom: 10%;
-  height: 45%;
+  min-height: 45%;
+  max-height: 45%;
 }
 .video > p {
   text-align: center;
