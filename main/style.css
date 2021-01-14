@@ -211,6 +211,12 @@ video {
   justify-content: center;  
   box-sizing:border-box;
 }
-.btn__media {
+.btn{
   width: 30%;
+  background: 0;
+  border: 0;
+}
+.btn__media {
+  width: 100%;
+  height: 100%;
 }
