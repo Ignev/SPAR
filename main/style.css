@@ -43,7 +43,7 @@ button {
 /* Logo */
 
 .logo {
-  padding: 10px;
+  padding: 5px;
   display: flex;
   align-items: center;
   background: #ffffff;
@@ -96,6 +96,7 @@ button {
 }
 video {
   width: 100%;
+  padding-bottom: 20px;
 }
 .container__video {
   position: relative;
