@@ -201,17 +201,17 @@ video {
 .footer{
   width: 100%;
   background: #cd0405;
+  padding: 10px;
   min-height: 10%;
   display: flex;
   justify-content: center;
+  margin-bottom: 1px;
 }
 .btn {
   width: 30%;
   background: 0;
-  padding: 10px;
   border: 0;
   background: #cd0405;
-  margin-bottom: 5px;
 }
 .btn__media {
   width: 100%;
