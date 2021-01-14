@@ -48,6 +48,8 @@ button {
   align-items: center;
   background: #ffffff;
   width: 100vw;
+  min-height: 7vh;
+  max-height: 7vh;
 }
 .logo__media {
   width: 35%;
