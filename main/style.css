@@ -72,8 +72,7 @@ button {
   position: relative;
   margin-bottom: 10%;
   padding-bottom: 9vw;
-  min-height: 40%;
-  max-height: 40%;
+  height: 45%;
 }
 .video > p {
   text-align: center;
@@ -100,11 +99,11 @@ button {
 }
 video {
   width: 100%;
-  padding-bottom: 20px;
 }
 .container__video {
   position: relative;
   width: 83%;
+  margin-bottom: 20px;
 }
 .video__btn {
   background: 0;
