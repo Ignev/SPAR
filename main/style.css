@@ -75,6 +75,7 @@ button {
   padding-bottom: 10px;
   position: absolute;
   top: 7%;
+  width: 100%;
 }
 .video > p {
   text-align: center;
@@ -101,7 +102,7 @@ button {
 }
 .container__video {
   position: relative;
-  width: 83%;
+  width: 250px;
 }
 video {
   width: 100%;
@@ -224,4 +225,40 @@ video {
 }
 .btn__media {
   width: 100%;
+}
+@media screen and (max-width: 768px){
+  .container__video {
+    position: relative;
+    width: 400px;
+  }
+}
+@media screen and (max-width: 414px){
+  .container__video {
+    position: relative;
+    width: 345px;
+  }
+}
+@media screen and (max-width: 411px){
+  .container__video {
+    position: relative;
+    width: 345px;
+  }
+}
+@media screen and (max-width: 375px){
+  .container__video {
+    position: relative;
+    width: 320px;
+  }
+}
+@media screen and (max-width: 360px){
+  .container__video {
+    position: relative;
+    width: 300px;
+  }
+}
+@media screen and (max-width: 320px){
+  .container__video {
+    position: relative;
+    width: 270px;
+  }
 }
