@@ -24,10 +24,12 @@
   bottom: 0;
   box-sizing: border-box;
 }
-
+body{
+  min-height: 100%;
+}
 body,html {
   font-family: "Avenir", sans-serif;
-  height: 100vh;
+  height: 100%;
   width: 100%;
   overflow: hidden;
 }
@@ -72,7 +74,7 @@ button {
   padding: 0 5px;
   position: relative;
   margin-bottom: 30px;
-  min-height: 45vh;
+  min-height: 45%;
   padding-bottom: 10px;
   width: 100%;
 }
@@ -148,7 +150,7 @@ video {
 }
 /* Slider */
 .slider{
-  min-height: 35vh; 
+  min-height: 35%; 
   width: 100%;
   background: #fff;
 }
