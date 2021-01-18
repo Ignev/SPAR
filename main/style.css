@@ -42,6 +42,7 @@ button {
   position: absolute;
   top: 0;
   left: 0;
+  background: #fff;
 }
 
 /* Logo */
@@ -156,6 +157,7 @@ video {
   position: absolute;
   top: 60%;
   width: 100%;
+  background: #fff;
 }
 .slider__item {
   display: flex;
