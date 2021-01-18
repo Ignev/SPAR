@@ -55,6 +55,3 @@ window.addEventListener("DOMContentLoaded", (e) => {
     restart.style.display = "none";
   });
 });
-setInterval(()=> {
-  test.innerHTML = window.innerHeight;
-}, 1000)
