@@ -55,4 +55,6 @@ window.addEventListener("DOMContentLoaded", (e) => {
     restart.style.display = "none";
   });
 });
-test.innerHTML = window.innerHeight;
+setInterval(()=> {
+  test.innerHTML = window.innerHeight;
+}, 1000)
