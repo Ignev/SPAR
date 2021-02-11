@@ -1,5 +1,5 @@
 window.addEventListener("DOMContentLoaded", (e) => {
- 
+ let stop = false;
 
   $('.slider').slick({
     infinite: true,
@@ -20,9 +20,13 @@ window.addEventListener("DOMContentLoaded", (e) => {
     video.webkitEnterFullScreen();
     test.innerHTML = "1";
   });
-  video.addEventListener('click', ()=>{
-    video.play();
-  })
+  setInterval(()=>{
+    console.log();
+    if(!video.webkitDisplayingFullscreen && !stop){
+      video.play();
+    }
+    
+  }, 200)
   sound.addEventListener("click", () => {
     if (video.muted == true) {
       video.muted = false;
@@ -49,11 +53,13 @@ window.addEventListener("DOMContentLoaded", (e) => {
     restart.style.display = "block";
     sound.style.display = "none";
     fullscreen.style.display = "none";
+    stop = true;
   };
   restart.addEventListener("click", () => {
     video.play();
     sound.style.display = "block";
     fullscreen.style.display = "block";
     restart.style.display = "none";
+    stop = false;
   });
 });
