@@ -44,6 +44,7 @@ button {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  overflow: hidden;
 }
 
 /* Logo */
@@ -205,14 +206,23 @@ video {
 .footer{
   width: 100%;
   background: #cd0405;
-  padding: 5px;
+  padding: 8px;
   padding-top: 6px;
-  min-height: 10vh;
-  max-height: 10vh;
+  min-height: 12vh;
+  max-height: 12vh;
   display: flex;
   justify-content: center;  
   box-sizing:border-box;
-
+  position: relative;
+  bottom: 0;
+}
+.footer::after{
+  content: "";
+  background: #cd0405;
+  position: absolute;
+  width: 100vh;
+  height: 50px;
+  bottom: -40px;
 }
 .btn{
   width: 30%;

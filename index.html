@@ -446,6 +446,13 @@
     window.onscroll = function () {
         updateBannerDimensions();
         updateIframe();
+        if(!document.querySelector("#top-creative").classList.contains("hide") || !document.querySelector("#bottom-creative").classList.contains("hide")){
+			creativeContainer.style.opacity = "0";
+			}
+			else{
+				creativeContainer.style.opacity = "1";
+				
+			}
     };
 
     window.onload = function () {

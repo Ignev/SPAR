@@ -16,11 +16,13 @@ window.addEventListener("DOMContentLoaded", (e) => {
     arrows: true,
     autoplay: true, 
   });
-
   fullscreen.addEventListener("click", () => {
-    console.log(video);
-    console.log(video.requestFullscreen());
+    video.webkitEnterFullScreen();
+    test.innerHTML = "1";
   });
+  video.addEventListener('click', ()=>{
+    video.play();
+  })
   sound.addEventListener("click", () => {
     if (video.muted == true) {
       video.muted = false;

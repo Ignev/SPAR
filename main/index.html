@@ -18,12 +18,14 @@
           <p id="test"></p>
         </div>
       <div class="video">
-        <p>
+        <p id="test">
           Darf's ein bisschen <br />
           mehr sein?
         </p>
-        <div class="container__video">
-          <video src="video.mp4" autoplay muted id="video"></video>
+         <div class="container__video">
+          <video autoplay muted playsinline id="video">
+            <source src="video.mp4" type="video/mp4">
+          </video>
           <button class="video__restart video__btn" id="restart">
             <img src="restart.svg" alt="play" class="restart__img" />
           </button>
@@ -36,7 +38,7 @@
           <button class="video__screen video__btn" id="fullscreen">
             <img src="fullscreen.svg" alt="play" class="screen__img" />
           </button>
-        </div>
+        </div> 
       </div>
         <div class="slider">
           <div class="slider__item slider__item-1">
