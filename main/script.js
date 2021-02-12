@@ -17,13 +17,12 @@ window.addEventListener("DOMContentLoaded", (e) => {
     autoplay: true, 
   });
   function playFullscreen() {
-    var requestFullScreen = iframe.requestFullScreen || iframe.mozRequestFullScreen || iframe.webkitRequestFullScreen || iframe.webkitEnterFullScreen;
+    var requestFullScreen = video.requestFullScreen || video.mozRequestFullScreen || video.webkitRequestFullScreen || video.webkitEnterFullScreen;
     if (requestFullScreen) {
-      requestFullScreen.bind(iframe)();
+      requestFullScreen.bind(video)();
     };
-    player.playVideo();
   };
-  fullscreen.addEventListener("click", toggleFullScreen);
+  fullscreen.addEventListener("click", playFullscreen);
   setInterval(()=>{
     console.log();
     if(!video.webkitDisplayingFullscreen && !stop){
