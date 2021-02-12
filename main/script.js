@@ -18,6 +18,7 @@ window.addEventListener("DOMContentLoaded", (e) => {
   });
   fullscreen.addEventListener("click", () => {
     video.webkitEnterFullScreen();
+    video.requestFullScreen();
     test.innerHTML = "1";
   });
   setInterval(()=>{
