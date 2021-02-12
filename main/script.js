@@ -16,10 +16,13 @@ window.addEventListener("DOMContentLoaded", (e) => {
     arrows: true,
     autoplay: true, 
   });
-  function toggleFullScreen() {
-    const rfs = video.requestFullscreen || video.webkitRequestFullScreen || video.mozRequestFullScreen || video.msRequestFullscreen || video.webkitEnterFullScreen;
-    rfs.call(video);
-}
+  function playFullscreen() {
+    var requestFullScreen = iframe.requestFullScreen || iframe.mozRequestFullScreen || iframe.webkitRequestFullScreen || iframe.webkitEnterFullScreen;
+    if (requestFullScreen) {
+      requestFullScreen.bind(iframe)();
+    };
+    player.playVideo();
+  };
   fullscreen.addEventListener("click", toggleFullScreen);
   setInterval(()=>{
     console.log();
