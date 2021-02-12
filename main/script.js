@@ -16,9 +16,11 @@ window.addEventListener("DOMContentLoaded", (e) => {
     arrows: true,
     autoplay: true, 
   });
-  fullscreen.addEventListener("click", () => {
-    video.webkitEnterFullScreen();
-  });
+  function toggleFullScreen() {
+    const rfs = video.requestFullscreen || video.webkitRequestFullScreen || video.mozRequestFullScreen || video.msRequestFullscreen;
+    rfs.call(video);
+}
+  fullscreen.addEventListener("click", toggleFullScreen);
   setInterval(()=>{
     console.log();
     if(!video.webkitDisplayingFullscreen && !stop){
